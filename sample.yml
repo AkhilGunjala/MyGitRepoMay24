@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: install httpd on ansible master
+  dnf:
+    name: http
+    state: present
